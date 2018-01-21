@@ -18,7 +18,7 @@ body {
 header {
   background-color: rgba(148, 94, 178, 1);
   text-align: center;
-  width: 100%;
+  width: 100%;  
 }
 
 #brand {
@@ -33,11 +33,16 @@ header {
   text-align: center;
 }
 
-#main-nav > ul > li {
+#main-nav > ul > li, #main-nav > ul > li > a {
   color: rgba(255, 255, 255, 0.75);
   display: inline;
   font-size: 1em;
   padding: 0 1em;
+  text-decoration: none;
+}
+
+#main-nav > ul > li > a:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 #main-nav .active {
@@ -113,7 +118,6 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .container {
-    margin: 2em 0;
     width: 90%;
   }
 
@@ -137,6 +141,27 @@ footer {
   }
 
   footer {
-    align-self: flex-end;
+    /* align-self: flex-end; */
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin: 2em 0;
+    width: 80%;
+  }
+
+  #about-section{
+    justify-content: space-around;
+  }
+
+  #bio-pic {
+    /* margin: 0 5vw; */
+    max-width: 30%;
+  }
+
+  #main-text {
+    /* margin: 0 5vw; */
+    max-width: 60%;
   }
 }
