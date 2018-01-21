@@ -124,6 +124,29 @@ header {
   padding: 0 1em;
 }
 
+/* Resume styling */
+.resume > section > h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.resume > section > dl > dt {
+  font-weight: 600;
+}
+
+.resume > section > dl > dd {
+  margin-bottom: 1em;
+}
+
+.resume > section > dl > dd > ul > li {
+  margin-bottom: .8em;
+}
+
+dt > small {
+  font-size: 1em;
+  font-weight: 400;
+}
+
 /* Global again */
 footer {
   align-content: center;
