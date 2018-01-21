@@ -1,127 +1,215 @@
-/* navbar */
-.navbar-default {
-  background-color: #4aaaa5;
-  border-color: #E7E7E7;
-}
-/* Title */
-.navbar-default .navbar-brand {
-  color: #fff;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #5E5E5E;
-}
-/* Link */
-.navbar-default .navbar-nav > li > a {
-  color: #fff;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #333;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: #007f79;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #555;
-  background-color: #D5D5D5;
+/* Mobile layout */
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-/* Mobile version */
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #CCC;
-}
-
-#logo {
-  font-size: 2em;
-}
-
-body a {
-  color: #b23d00;
-}
-
-body h1, h2, h3, h4, h5, h6 {
-  color: #4aaaa5;
-}
-
-/* Style fixes */
 body {
-  background: url("../images/crossword.png");
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  max-width: 100vw;
+  min-height: 100vh;
 }
 
-@media only screen and (max-width: 768px) {
-  .col-xs-offset-1 {
-    margin-top: 1em;
-    margin-left: 0;
-  }
-  #main-text {
-    font-size: 1.2em;
-  }
-  #contact {
-    margin-bottom: 15vh;
-  }
+header {
+  background-color: rgba(148, 94, 178, 1);
+  text-align: center;
+  width: 100%;  
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .col-md-offset-1 {
-    margin-top: 5vh;
-  }
-  #contact {
-    margin-bottom: 10vh;
-  }
-  #contact-me {
-    font-size: 2em;
-  }
+#brand {
+  font-size: 1.953em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-@media only screen and (min-width: 992px) {
- #contact {
-    margin-top: 2em;
-    margin-left: 0;
-  }
-  .bottom-row {
-    margin-bottom: 10vh;
-  }
+#main-nav > ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
 }
 
-.footer {
-  background-color: #666;
-  position: fixed;
-  bottom: 0;
+#main-nav > ul > li, #main-nav > ul > li > a {
+  color: rgba(255, 255, 255, 0.75);
+  display: inline;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+#main-nav > ul > li {
+  padding: 0 1em;
+}
+
+#main-nav > ul > li > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#main-nav .active {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+
+.container {
+  width: 100vw;
+}
+
+.section-header {
+  background-color: rgba(230, 185, 255, 1);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75em;
+  height: 10vh;
+  justify-content: center;
+  margin: 0 0 .8em 0;
   text-align: center;
   width: 100%;
-  padding: 3vh 0 3vh 0;
-  font-size: .8em;
-  color: #ccc;
-  border-top: 1.5vh solid #4aaaa5;
 }
 
-#form-submit {
-  background-color: #4aaaa5;
-  color: #fff;
+/* About page styling */
+#bio-pic {
+  max-width: 100%;
+  padding: 0 10%;
 }
 
-.thumbnail {
-  position: relative;
-  padding: 0;
+#main-text {
+  padding: 0 1em;
 }
 
-.caption {
-  position: absolute;
-  bottom: 5%;
-  padding: 10px 0px;
-  background-color: #4aaaa5;
-  font-size: 1.2em;
-  color: #fff !important;
+#main-text > a, .description > a {
+  color: rgba(111, 80, 127, 1);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#main-text > a:visited, .description > a:visited {
+  color: rgba(97, 41, 127, 1);
+}
+
+/* Portfolio Styling */
+#portfolio {
   width: 100%;
 }
 
-.thumbnail:hover .caption {
-  background-color: #b23d00;
+.portfolio-item {
+  align-items: center;
+  border-top: 1px solid rgba(177, 127, 204, 1);
+  border-bottom: 1px solid rgba(177, 127, 204, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+  max-width: 100%;
+}
+
+.portfolio-item > a > img {
+  height: auto;
+  max-width: 100%;
+}
+
+.site-name {
+  background-color: rgba(177, 127, 204, 1);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25em;
+  padding: .5em 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.description {
+  padding: 0 1em;
+}
+
+/* Global again */
+footer {
+  align-content: center;
+  background-color: rgba(148, 94, 178, 1);
+  color: rgba(255, 255, 255, .9);
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1em;
+  justify-content: center;
+  padding: .5em 0;
+  width: 100%;
+}
+
+.sub-nav {
+  list-style: none;
+}
+
+.sub-nav > ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+.sub-nav > ul > li {
+  display: inline;
+  padding: 0 .5em;
+}
+
+.sub-nav > ul > li > a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  #about-section, #portfolio, #resume {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  #bio-pic {
+    height: auto;
+    max-width: 33.33%;
+    padding: 0;
+  }
+
+  #main-text {
+    flex: 66.67%;
+    margin: 0;
+    padding: 0 0 0 1em;
+  }
+
+  #portfolio {
+    align-content: flex-start;
+    display: flex;
+    justify-content: space-around;
+    flex: row wrap;
+  }
+  
+  .portfolio-item {
+    border: 1px solid rgba(177, 127, 204, 1);
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin: 2em 0;
+    width: 80%;
+  }
+
+  #about-section, #portfolio, #resume {
+    justify-content: space-around;
+  }
+
+  #bio-pic {
+    /* margin: 0 5vw; */
+    max-width: 30%;
+  }
+
+  #main-text {
+    /* margin: 0 5vw; */
+    max-width: 60%;
+  }
 }
