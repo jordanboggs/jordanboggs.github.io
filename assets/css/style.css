@@ -54,9 +54,9 @@ header {
   font-size: 1.75em;
   height: calc(1.75em * 1.75);
   justify-content: center;
-  margin: 0 0 .8em -.8em;
+  margin: 0 0 .8em 0;
   text-align: center;
-  width: calc(100% + .8em + .8em);
+  width: 100vw;
 }
 
 #bio-pic {
@@ -77,31 +77,50 @@ header {
 footer {
   align-content: center;
   background-color: rgba(148, 94, 178, 1);
+  color: rgba(255, 255, 255, .9);
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  font-size: 1em;
   justify-content: center;
   padding: .5em 0;
   width: 100%;
-}
-
-#contact-me {
-  color: rgba(255, 255, 255, .9);
-  font-size: .8em;
-  padding: 1em 0;
 }
 
 .sub-nav {
   list-style: none;
 }
 
+.sub-nav > ul {
+  padding-left: 0;
+  text-align: center;
+}
+
 .sub-nav > ul > li {
   display: inline;
+  padding: 0 .5em;
 }
 
 .sub-nav > ul > li > a {
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
 
-.link-icon {
-  max-height: 2em;
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 2em 0;
+    width: 90%;
+  }
+
+  #about-section {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  #bio-pic {
+    height: auto;
+    max-width: 33.33%;
+    padding: 0;
+  }
 }
