@@ -161,7 +161,7 @@ footer {
     width: 90%;
   }
 
-  #about-section, #portfolio {
+  #about-section, #portfolio, #resume {
     align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
@@ -199,7 +199,7 @@ footer {
     width: 80%;
   }
 
-  #about-section, #portfolio {
+  #about-section, #portfolio, #resume {
     justify-content: space-around;
   }
 

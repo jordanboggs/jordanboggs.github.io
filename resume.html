@@ -4,78 +4,116 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jordan Boggs</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-<div class="container-fluid">
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
-        </button>
-        <span class="navbar-brand" id="logo">Jordan Boggs</span>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="./index.html">About</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li> 
-          <li class="active"><a href="./contact.html">Contact</a></li> 
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-<div class="container">
-    <div class="row">
-      <section id="main" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-        <div class="row">
-          <div class="col-xs-12">
-            <h2 class="page-header">Contact me</h2>
-          </div>
-        </div>
-        <div class="row">
-          <form class="col-xs-12 col-sm-12 col-md-10 col-lg-9">
-            <div class="form-group">
-              <label for="contactName">Name</label>
-              <input type="text" class="form-control" id="fullname" placeholder="Jane Smith">
-            </div>
-            <div class="form-group">
-              <label for="contactEmail">Name</label>
-              <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
-            </div>
-            <div class="form-group">
-              <label for="contactMessage">Message</label>
-              <textarea class="form-control" rows="10"></textarea>
-            </div>
-            <div class="form-group">
-              <button id="form-submit" class="btn btn-default" type="submit">Submit</button>
-            </div>
-          </form>
-        </div>
+  <header>
+    <h1 id="brand">Jordan Boggs</h1>
+    <nav id="main-nav">
+      <ul>
+        <li>
+          <a href="./index.html">About</a>
+        </li>
+        <li>
+          <a href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="active">
+          Resume
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <article class="resume">
+      <h2 class="section-header">Resume</h2>
+      <section id="education">
+        <h3>Education</h3>
+        <dl>
+          <dt>University of Denver (2017-2018)</dt>
+          <dd>Certification in Full-stack Web Development from University of Denver Coding Bootcamp. Anticipated graduation in April, 2018.</dd>
+          <dt>Ohio University (2007-2011)</dt>
+          <dd>B.A. in Linguistics with focus on Computer Assisted Language Learning. Minor in Russian.</dd>
+        </dl>    
       </section>
-      <aside id="contact" class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
-        <div class="row">
-          <h2 id="contact-me" class="col-md-12 text-center">Connect with me</h2>
-        </div>
-        <div class="row">
-            <a href="https://github.com/preaksneview" target="_blank"><img id="github-icon" class="img-responsive col-xs-4 col-sm-4 col-md-4 col-lg-3 col-lg-offset-2" src="assets/images/if_github_square_107105.png" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/jordan-boggs-b27b6019/" target="_blank"><img class="img-responsive col-xs-4 col-sm-4 col-md-4 col-lg-3" src="assets/images/if_11-linkedin_104493.png" alt="LinkedIn"></a>
-            <a href="https://stackoverflow.com/users/8429568/jordan-boggs" target="_blank"><img class="img-responsive col-xs-4 col-sm-4 col-md-4 col-lg-3" src="assets/images/if_stackoverflow_287650.png" alt="StackOverflow"></a>
-        </div>
-      </aside>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="footer row">
-      <footer class="col-md-12">&copy;2017 Jordan Boggs</footer>
-    </div>
-  </div>
-</div>
+      <section id="skills">
+        <h3>Skills</h3>
+        <p>Cross-browser compatibility, integrating user feedback, layout and typography, mobile web design, project management, responsive design, semantic HTML, user-centered design, video editing, video production.</p>    
+      </section>
+      <section id="programming">
+        <h3>Programming Languages, Frameworks, &amp; Tools</h3>
+        <p>Adobe Creative Cloud (After Effects, Audition, Illustrator, Photoshop, Premiere), AJAX, Bootstrap, CSS3, Firebase, Git, HTML5, Javascript, JSON, jQuery, Linux, macOS, Node.JS, RESTful APIs, Windows.</p>
+      </section>
+      <section id="projects">
+        <h3>Freelance Experience &amp; Projects</h3>
+        <dl>
+          <dt>StudyBuddy. December, 2017&ndash;January, 2018.</dt>
+          <dd>
+            <ul>
+              <li>
+                <em>What technologies are you using?</em> HTML5, CSS3, CSS Grid, jQuery, RESTful APIs (Firebase, Google Maps API, Weather Underground API).
+              </li>
+              <li>
+                <em>Backend:</em> Using RESTful APIs (Firebase, Google Maps, Weather Underground) to create a listing of open study groups and display their locations and weather conditions.
+              </li>
+              <li>
+                <em>Frontend:</em> Used CSS3, CSS Grid, HTML5, Javascript, and jQuery to create a clean, responsive front end that presents information clearly.
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </section>
+      <section id="work">
+        <h3>Work Experience</h3>
+        <dl>
+          <dt>Rocky Mountain Public Health Training Center <small>at University of Colorado School of Public Health</small> (Dec, 2017–Present)
+          </dt>
+          <dd>
+            <em>Training Development Specialist</em>
+            <ul>
+              <li>
+                Work with external partners and subject matter experts to develop learning objectives.
+              </li>
+              <li>
+                Compile and develop training materials for distance-based learning opportunities.
+              </li>
+              <li>
+                Responsible for technical support to training participants and instructors.
+              </li>
+              <li>
+                Provide instructional design support for the development of new learning opportunities including videos, online courses, online modules, and webinars.
+              </li>
+              <li>
+                Responsible for video and audio editing and learning management systems.
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <nav class="sub-nav">
+      <ul>
+        <li>
+          Connect with me
+        </li>
+        <li>
+          <a href="https://github.com/preaksneview" target="_blank">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jordan-boggs-b27b6019/" 
+            target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </body>
 </html>
