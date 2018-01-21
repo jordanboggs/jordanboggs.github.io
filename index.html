@@ -5,25 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jordan Boggs</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
 <header>
-  <h1>Jordan Boggs</h1>
-  <nav>
+  <h1 id="brand">Jordan Boggs</h1>
+  <nav id="main-nav">
     <ul>
-      <li>About</li>
+      <li class="active">About</li>
       <li>Portfolio</li>
       <li>Resume</li>
     </ul>
   </nav>
 </header>
-          <h1 class="col-md-12 page-header">About me</h1>
-          <p id="main-text" class="col-xs-12 col-xs-offset-1 col-sm-9 col-sm-offset-0 col-md-9 col-lg-9">Jordan Boggs is new to web development, but no stranger to the web. From 2012-2017, she worked for the University of Pennsylvania's <a href="https://www.sas.upenn.edu/onlinelearning/" target="_blank">Online Learning department</a> as an instructional technologist and head of media production. Currently, she works as a video editor, web assistant, and general helper-person at <a href="http://www.motionpixel.com" target="_blank">Motion Pixel Lab</a> in Colorado Springs. She hopes to use her past experience in elearning and media to inform her future work as a developer.</p>
-          <h2 id="contact-me" class="col-md-12 text-center">Connect with me</h2>
-            <a href="https://github.com/preaksneview" target="_blank"><img id="github-icon" class="img-responsive col-xs-4 col-sm-4 col-md-4 col-lg-3 col-lg-offset-2" src="assets/images/if_github_square_107105.png" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/jordan-boggs-b27b6019/" target="_blank"><img class="img-responsive col-xs-4 col-sm-4 col-md-4 col-lg-3" src="assets/images/if_11-linkedin_104493.png" alt="LinkedIn"></a>
-            <a href="https://stackoverflow.com/users/8429568/jordan-boggs" target="_blank"><img class="img-responsive col-xs-4 col-sm-4 col-md-4 col-lg-3" src="assets/images/if_stackoverflow_287650.png" alt="StackOverflow"></a>
-      <footer class="col-md-12">&copy;2017 Jordan Boggs</footer>
+<main class="container">
+  <article id="about-section">
+    <h2 class="section-header">About me</h2>
+    <img id="bio-pic" src="./assets/images/IMG0841.JPG" alt="">
+    <p id="main-text">Jordan Boggs is a front-end developer studying to become 
+      a full-stack developer at the <a href="https://bootcamp.du.edu/coding/"
+      target="_blank">University of Denver Coding Bootcamp</a>. From 2012-2017, 
+      she worked for the University of Pennsylvania's <a 
+      href="https://www.sas.upenn.edu/onlinelearning/" target="_blank">Online
+       Learning department</a> as an instructional technologist and head of 
+       media production. Currently, she is a Training Development Specialist at 
+       the <a href="https://www.publichealthpractice.org/training-category/rocky-mountain-public-health-training-center" 
+       target="_blank">Rocky Mountain Public Health Training Center</a>. She 
+       uses her past experience in elearning and media to inform her 
+       work as a designer and developer.</p>
+  </article>
+</main>
+<footer>
+  <h2 id="contact-me">Connect with me</h2>
+  <nav class="sub-nav">
+    <ul>
+      <li>
+        <a href="https://github.com/preaksneview" target="_blank">
+          <img id="github-icon" class="link-icon" 
+            src="./assets/images/if_github_square_107105.png" alt="Github">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/jordan-boggs-b27b6019/" 
+          target="_blank">
+          <img class="link-icon" src="./assets/images/if_11-linkedin_104493.png" 
+            alt="LinkedIn">
+        </a>
+      </li>
+      <li>
+        <a href="https://stackoverflow.com/users/8429568/jordan-boggs" 
+        target="_blank">
+          <img class="link-icon" src="./assets/images/if_stackoverflow_287650.png" 
+            alt="StackOverflow">
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
 </body>
 </html>
