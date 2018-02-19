@@ -81,7 +81,7 @@ header {
   padding: 0 1em;
 }
 
-.main-text > a, .description > a {
+.main-text > a, .description > a, .description > p > a {
   color: rgba(111, 80, 127, 1);
   font-weight: 600;
   text-decoration: none;
