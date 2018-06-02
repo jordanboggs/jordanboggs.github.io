@@ -4,72 +4,48 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jordan Boggs</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="./assets/css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/main.css">
 </head>
 <body>
-  <header>
-    <h1 id="brand">Jordan Boggs</h1>
-    <nav id="main-nav">
-      <ul>
-        <li class="active">
-          About
-        </li>
-        <li>
-          <a href="./portfolio.html">Portfolio</a>
-        </li>
-        <li>
-            <a href="./assets/files/boggs-resume.pdf" download="Jordan Boggs Web Developer Resume">Resume</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="hero is-primary is-large">
+    <div class="hero-head">
+
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-size-1">Jordan Boggs</h1>
+        <h2 class="subtitle">Full Stack Web Developer</h2>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <nav class="tabs">
+        <div class="container">
+          <ul>
+            <li class="is-active">
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
-  <main class="container">
-    <article id="about-section">
-      <h2 class="section-header">Let's work together!</h2>
-      <p id="main-text" class="main-text">I'm a front-end developer studying to become 
-        a full-stack developer at the <a href="https://bootcamp.du.edu/coding/"
-        target="_blank">University of Denver Coding Bootcamp</a>. From 2012-2017, 
-        I worked for the University of Pennsylvania's <a 
-        href="https://www.sas.upenn.edu/onlinelearning/" target="_blank">Online
-        Learning department</a> as an instructional technologist and head of 
-        media production. Currently, I'm working as a Training Development Specialist at 
-        the <a href="https://www.publichealthpractice.org/training-category/rocky-mountain-public-health-training-center" 
-        target="_blank">Rocky Mountain Public Health Training Center</a>. I use my past experience in elearning and media to inform my work as a designer and developer.</p>
-        <p class="main-text">
-          <strong>What that means for you</strong> is that I am a clear 
-          communicator. A website has a story to tell, and between my education 
-          and video experience, I am the person to help you tell it. I like clean, 
-          functional designs and simple interfaces that just work. Please check out 
-          my portfolio and resume and give me a shout if you'd like to work together!
-        </p>
-        <a class="big-button" href="mailto:boggsjp@gmail.com">
-          Let's talk!
-        </a>
-    </article>
-  </main>
-  <footer>
-    <nav class="sub-nav">
-      <ul>
-        <li>
-          Connect with me
-        </li>
-        <li>
-          <a href="https://github.com/preaksneview" target="_blank">
-            <i class="fab fa-github-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/jordan-boggs-b27b6019/" 
-            target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="is-size-2 has-text-primary">About</h2>
+      <p>I am a full-stack web developer who can also offer years of Instructional Technology, Instructional Design, Project Management, and Video Production expertise. I currently work for the University of Colorado where I design course sites and help train Public Health professionals. <strong>What that means for you</strong> is that I communicate clearly, value clean design, and know how to work with other designers to create a unified user experience.</p>
+    </div>  
+  </section>
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="is-size-2 has-text-primary">Areas of Expertise</h2>
+      <p>Adobe Creative Cloud (After Effects, Audition, Illustrator, Photoshop, Premiere), AJAX, Bootstrap, CSS3, cross-browser compatibility, Express, Git, Heroku, HTML5, integrating user feedback, JavaScript, JSON, jQuery, layout and typography, Linux, macOS, Material Design, MERN stack, mobile web design, MongoDB, Mongoose, MVC architecture, MySQL, Node.js, Nuxt, ORMs, Passport.js, project management, React.js, responsive design, RESTful APIs, semantic HTML, Sequelize, state management, user authentication, user-centered design, video editing, video production, Vue.js, Windows. <strong>Better yet, check out my portfolio below.</strong></p>
+    </div>
+  </section>
 </body>
 </html>
