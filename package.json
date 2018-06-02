@@ -1,0 +1,22 @@
+{
+  "name": "jordanboggs.github.io",
+  "version": "1.0.0",
+  "description": "Jordan Boggs's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanboggs/jordanboggs.github.io.git"
+  },
+  "author": "Jordan Boggs <boggsjp@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanboggs/jordanboggs.github.io/issues"
+  },
+  "homepage": "https://github.com/jordanboggs/jordanboggs.github.io#readme",
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
