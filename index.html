@@ -1,75 +1,328 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jordan Boggs</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="./assets/css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/main.css">
 </head>
+
 <body>
-  <header>
-    <h1 id="brand">Jordan Boggs</h1>
-    <nav id="main-nav">
-      <ul>
-        <li class="active">
-          About
-        </li>
-        <li>
-          <a href="./portfolio.html">Portfolio</a>
-        </li>
-        <li>
-            <a href="./assets/files/boggs-resume.pdf" download="Jordan Boggs Web Developer Resume">Resume</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="hero is-primary is-large">
+    <div class="hero-head">
+
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-size-1">Jordan Boggs</h1>
+        <h2 class="subtitle">Full Stack Web Developer</h2>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <nav class="tabs">
+        <div class="container">
+          <ul>
+            <li class="is-active">
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
-  <main class="container">
-    <article id="about-section">
-      <h2 class="section-header">Let's work together!</h2>
-      <p id="main-text" class="main-text">I'm a front-end developer studying to become 
-        a full-stack developer at the <a href="https://bootcamp.du.edu/coding/"
-        target="_blank">University of Denver Coding Bootcamp</a>. From 2012-2017, 
-        I worked for the University of Pennsylvania's <a 
-        href="https://www.sas.upenn.edu/onlinelearning/" target="_blank">Online
-        Learning department</a> as an instructional technologist and head of 
-        media production. Currently, I'm working as a Training Development Specialist at 
-        the <a href="https://www.publichealthpractice.org/training-category/rocky-mountain-public-health-training-center" 
-        target="_blank">Rocky Mountain Public Health Training Center</a>. I use my past experience in elearning and media to inform my work as a designer and developer.</p>
-        <p class="main-text">
-          <strong>What that means for you</strong> is that I am a clear 
-          communicator. A website has a story to tell, and between my education 
-          and video experience, I am the person to help you tell it. I like clean, 
-          functional designs and simple interfaces that just work. Please check out 
-          my portfolio and resume and give me a shout if you'd like to work together!
+  <main>
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="is-size-2 has-text-primary">About</h2>
+        <p>I am a full-stack web developer who can also offer years of Instructional Technology, Instructional Design, Project
+          Management, and Video Production expertise. I currently work for the University of Colorado where I design course
+          sites and help train Public Health professionals.
+          <strong>What that means for you</strong> is that I communicate clearly, value clean design, and know how to work with other
+          designers to create a unified user experience.</p>
+      </div>
+    </section>
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="is-size-2 has-text-primary">Areas of Expertise</h2>
+        <p>Adobe Creative Cloud (After Effects, Audition, Illustrator, Photoshop, Premiere), AJAX, Bootstrap, CSS3, cross-browser
+          compatibility, Express, Git, Heroku, HTML5, integrating user feedback, JavaScript, JSON, jQuery, layout and typography,
+          Linux, macOS, Material Design, MERN stack, mobile web design, MongoDB, Mongoose, MVC architecture, MySQL, Node.js,
+          Nuxt, ORMs, Passport.js, project management, React.js, responsive design, RESTful APIs, semantic HTML, Sequelize,
+          state management, user authentication, user-centered design, video editing, video production, Vue.js, Windows.
+          <strong>Better yet, check out my portfolio below.</strong>
         </p>
-        <a class="big-button" href="mailto:boggsjp@gmail.com">
-          Let's talk!
-        </a>
-    </article>
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <h2 class="is-size-2 has-text-primary">Portfolio</h2>
+        <div class="columns is-multiline is-desktop">
+          <div class="column is-half-desktop is-one-third-widescreen">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <a href="https://fathomless-thicket-38865.herokuapp.com/" target="_blank">
+                    <img src="./assets/images/nyt-react.png" alt="News Scraper">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">News Scraper</h3>
+                <p>News Scraper allows users to search for a topic, start year, and end year. This app will display results
+                  using the New York Times API. You can save these Articles, as well as delete those saved articles and add
+                  or remove notes. Built using React, Bootstrap 4, MongoDB, Mongoose, Express, and Node.</p>
+                <br>
+                <br>
+                <p>
+                  <a class="button is-primary" target="_blank" href="https://github.com/jordanboggs/nyt-scraper">GitHub</a>
+                  <a class="button is-primary" target="_blank" href="https://fathomless-thicket-38865.herokuapp.com/">Heroku</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half-desktop is-one-third-widescreen">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <a href="https://protected-depths-46622.herokuapp.com/" target="_blank">
+                    <img src="./assets/images/moodmap.png" alt="MoodMap">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">MoodMap</h3>
+                <p>MoodMap is a mood and habit tracking app. Users will take a quick survey every day and their answers will
+                  be analyzed and presented as charts to help them track their responses over time. MoodMap uses Bootstrap
+                  on the front end and Node, Express, MySQL, Sequelize, and Passport.js with bCrypt on the back end.</p>
+                <br>
+                <br>
+                <p>
+                  <a class="button is-primary" target="_blank" href="https://github.com/jordanboggs/moodmap">GitHub</a>
+                  <a href="https://protected-depths-46622.herokuapp.com/" class="button is-primary" target="_blank">Heroku</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half-desktop is-one-third-widescreen">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <a href="https://desolate-brook-57968.herokuapp.com/" target="_blank">
+                    <img src="./assets/images/burgers.png" alt="Burgers, Yum! on Heroku">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">Burgers, Yum!</h3>
+                <p>Burgers, Yum! is a full-stack app that uses RESTful API calls to a MySQL database to:
+                  <br>
+                  <br>
+                  <ol>
+                    <li>Store delicious burgers and whether they've been devoured yet</li>
+                    <li>Mark said delicious burgers as devoured</li>
+                    <li>Add new delicious burgers for us to devour
+                      <ul>
+                        <li>Additionally, if you can't think of a clever name for your burger, a blank submission will randomly
+                          generate one for you using the random-word NPM package</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </p>
+                <br>
+                <p>Technologies used: Material Components for Web, Flexbox, and Handlebars on the front end; Node, Express,
+                  MySQL, RESTful APIs, and Gulp on the Back end.</p>
+                <br>
+                <br>
+                <a class="button is-primary" target="_blank" href="https://github.com/jordanboggs/burger">GitHub</a>
+                <a href="https://desolate-brook-57968.herokuapp.com/" class="button is-primary" target="_blank">Heroku</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half-desktop is-one-third-widescreen">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <a href="https://whispering-dawn-28472.herokuapp.com/" target="_blank">
+                    <img src="./assets/images/mushroom.png" alt="Mushroom Match on Heroku">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">Mushroom Match</h3>
+                <p>Mushroom Match has a simple responsive interface using Materialize for a familiar user experience. Simply
+                  begin the brief survey, answer all ten questions, and find out which Mario character could be your soul
+                  mate!
+                  <br>
+                  <br> To bring you Mushroom Match, I've used the following:
+                  <br>
+                  <br>
+                  <ul>
+                    <li>
+                      <em>Front end:</em> Materialize, jQuery</li>
+                    <li>
+                      <em>Back end:</em> Node, Express</li>
+                  </ul>
+                </p>
+                <br>
+                <br>
+                <a class="button is-primary" target="_blank" href="https://github.com/jordanboggs/friend-finder-hw">GitHub</a>
+                <a href="https://whispering-dawn-28472.herokuapp.com/" class="button is-primary" target="_blank">Heroku</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half-desktop is-one-third-widescreen">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <a href="https://github.com/jordanboggs/bamazon" target="_blank">
+                    <img src="https://i.imgur.com/LiZCiAw.gif" alt="bamazon on GitHub">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">bamazon</h3>
+                <p>
+                  bamazon is a Command Line Interface app using Node and MySQL. bamazon offers three interface options for three use cases:
+                  customers, managers, and supervisors.
+                </p>
+                <br>
+                <br>
+                <a class="button is-primary" target="_blank" href="https://github.com/jordanboggs/bamazon">GitHub</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half-desktop is-one-third-widescreen">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <a href="https://jordanboggs.github.io/study_buddy/" target="_blank">
+                    <img src="./assets/images/StudyBuddy.png" alt="StudyBuddy on GitHub Pages">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">StudyBuddy</h3>
+                <p>
+                  StudyBuddy is a web app that facilitates study group meetups by providing a time table and weather information to determine
+                  whether it's safe to drive.
+                  <br>
+                  <br>
+                  <em>What technologies are you using?</em> HTML5, CSS3, CSS Grid, jQuery, RESTful APIs (Firebase, Google Maps
+                  API, Weather Underground API).
+                  <br>
+                  <br>
+                  <em>Backend:</em> Using RESTful APIs (Firebase, Google Maps, Weather Underground) to create a listing of open
+                  study groups and display their locations and weather conditions.
+                  <br>
+                  <br>
+                  <em>Frontend:</em> Used CSS3, CSS Grid, HTML5, Javascript, and jQuery to create a clean, responsive front end
+                  that presents information clearly.
+                  <br>
+                  <br>
+                </p>
+                <p>
+                  <a class="button is-primary" target="_blank" href="https://github.com/jordanboggs/study_buddy">GitHub Repository</a>
+                  <a class="button is-primary" target="_blank" href="https://jordanboggs.github.io/study_buddy/">GitHub Pages</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half-desktop is-one-third-widescreen">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <a href="https://github.com/jordanboggs/constructor-hangman" target="_blank">
+                    <img src="./assets/images/hangman.png" alt="Hangman on GitHub">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">Hangman</h3>
+                <p>
+                  Quick and simple CLI Hangman game using Node.
+                  <br>
+                  <br>
+                </p>
+                <p>
+                  <a class="button is-primary" target="_blank" href="https://github.com/jordanboggs/constructor-hangman">GitHub</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half-desktop is-one-third-widescreen">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <a href="https://github.com/jordanboggs/liri-node-app" target="_blank">
+                    <img src="./assets/images/liri.png" alt="LIRI Bot on GitHub">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">LIRI Bot</h3>
+                <p>
+                  LIRI (Language Interpretation and Recognition Interface, a play on SIRI) is a command line node.js app that uses the Twitter,
+                  Spotify, and OMDb APIs to send data back to the user.
+                  <br>
+                  <br>
+                </p>
+                <p>
+                  <a class="button is-primary" target="_blank" href="https://github.com/jordanboggs/liri-node-app">GitHub</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half-desktop is-one-third-widescreen">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <a href="https://jordanboggs.github.io/firebase-trains/" target="_blank">
+                    <img src="./assets/images/train-tracker.png" alt="Train Tracker on GitHub Pages">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">Train Tracker</h3>
+                <p>
+                  Train Tracker is a web application that uses a Firebase database and moment.js to track trains' arrival times.
+                  <br>
+                  <br>
+                </p>
+                <p>
+                  <a class="button is-primary" target="_blank" href="https://github.com/jordanboggs/liri-node-app">GitHub Repository</a>
+                  <a href="https://jordanboggs.github.io/firebase-trains/" class="button is-primary" target="_blank">GitHub Pages</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <nav class="sub-nav">
-      <ul>
-        <li>
-          Connect with me
-        </li>
-        <li>
-          <a href="https://github.com/preaksneview" target="_blank">
-            <i class="fab fa-github-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/jordan-boggs-b27b6019/" 
-            target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <footer class="footer has-background-primary has-text-white">
+    <div class="container">
+      <div class="content has-text-left is-size-5">
+        Connect with me:
+        <a class="has-text-white is-size-5" href="https://github.com/jordanboggs" target="_blank">
+          <i class="fab fa-github-square"></i>
+        </a>
+        <a class="has-text-white is-size-5" href="https://www.linkedin.com/in/jordan-boggs/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
   </footer>
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </body>
+
 </html>

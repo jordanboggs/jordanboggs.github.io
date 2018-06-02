@@ -1,0 +1,10 @@
+// Import initial Bulma variables
+@import '../node_modules/bulma/sass/utilities/initial-variables';
+@import '../node_modules/bulma/sass/utilities/functions';
+
+// Bulma style overrides
+$primary: $purple;
+$primary-invert: findColorInvert($purple);
+
+// Import Bulma
+@import '../../node_modules/bulma/bulma';
